@@ -1,0 +1,80 @@
+#book_list_wrapper {
+    background-color: #fff!important;
+    height: 728px;
+    width: 1147px;
+    position: absolute;
+    top: 1px;
+    right: 35px;
+}
+
+#tbl_book_list { border-bottom: 1px solid #ccc; }
+
+#tbl_book_list #bl_tbody tr:hover { cursor: pointer; }
+
+#bl_tbody { 
+    height: auto;
+    max-height: 530px; 
+}
+
+.tbl-border {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.no-books { border:0; }
+
+.delete-book-form {
+   float: right;
+   margin-left: 10px;
+}
+
+button:focus { outline: none!important; }
+
+.selected {
+    background-color: #f6f6f6;
+    border-top: 1px solid #ccc;
+}
+
+.placeholder-background {
+    background: rgba(252, 211, 77, 0.5);
+    color: #fff;
+    width: 100%!important;
+    height: 57px;
+}
+
+@media screen and (max-width: 991px) {
+
+    #add_book_form {
+        position: relative!important;
+        top: auto!important;
+        left: auto!important;
+        margin: auto;
+    }
+
+    #wrap > #book_list_wrapper {
+        background-color: #ccc;
+        height: 793px;
+        width: 100%;
+        position: relative!important;
+        top: auto!important;
+        right: auto!important;
+        margin-top: 40px;
+        border-radius: 0px;
+    }
+
+    .btn-icon-wrap { padding: 0px!important; }
+
+    .p-4 { padding: 14px!important; }
+
+    .btn-details {
+        position: static!important;
+        left: 0!important;
+    }
+
+    .bl-td-w {
+        padding: 7px!important;
+        position: relative;
+        top: 6px;
+    }
+}

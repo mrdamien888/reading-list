@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "ea89dbe9-74ad-4245-926e-18bbc05c8420",
+		"name": "booj-reading-list",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"book\":{\n        \"title\": \"Laravel Up & Running\",\n        \"author\": \"Matt Stauffer\",\n        \"pages\": \"554\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://mighty-cliffs-00279.herokuapp.com/api/book/add",
+					"protocol": "https",
+					"host": [
+						"mighty-cliffs-00279",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"book",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-cliffs-00279.herokuapp.com/api/book/remove/4",
+					"protocol": "https",
+					"host": [
+						"mighty-cliffs-00279",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"book",
+						"remove",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-cliffs-00279.herokuapp.com/api/books",
+					"protocol": "https",
+					"host": [
+						"mighty-cliffs-00279",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sort list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-cliffs-00279.herokuapp.com/api/books/sort",
+					"protocol": "https",
+					"host": [
+						"mighty-cliffs-00279",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"books",
+						"sort"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-cliffs-00279.herokuapp.com/api/books/order",
+					"protocol": "https",
+					"host": [
+						"mighty-cliffs-00279",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"books",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-cliffs-00279.herokuapp.com/api/book/details/1",
+					"protocol": "https",
+					"host": [
+						"mighty-cliffs-00279",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"book",
+						"details",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
